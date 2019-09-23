@@ -11,10 +11,11 @@ import Menu from '@material-ui/core/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import LanguageIcon from '@material-ui/icons/Language';
 import { FormattedMessage } from 'react-intl';
+import messages from './messages';
 
 function MenuLanguage(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const { options, onChange, messages, value } = props;
+  const { options, onChange, value } = props;
 
   const handleClickLanguageIcon = event => {
     setAnchorEl(event.currentTarget);
@@ -63,7 +64,6 @@ function MenuLanguage(props) {
 MenuLanguage.propTypes = {
   options: PropTypes.array,
   onChange: PropTypes.func,
-  messages: PropTypes.object,
   value: PropTypes.string,
 };
 

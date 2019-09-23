@@ -9,7 +9,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 import MenuLanguage from 'components/MenuLanguage';
-import messages from './messages';
 import { appLocales } from '../../i18n';
 import { changeLocale } from '../LanguageProvider/actions';
 import { makeSelectLocale } from '../LanguageProvider/selectors';
@@ -19,7 +18,7 @@ export function LocaleToggle(props) {
     <MenuLanguage
       value={props.locale}
       options={appLocales}
-      messages={messages}
+      // messages={messages}
       onChange={props.onLocaleToggle}
     />
   );

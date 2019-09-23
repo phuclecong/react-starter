@@ -16,9 +16,10 @@ import { ConnectedRouter } from 'connected-react-router';
 import FontFaceObserver from 'fontfaceobserver';
 import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
-
 // Import root app
 import App from 'containers/App';
+import { ThemeProvider } from '@material-ui/styles';
+import theme from 'theme-config';
 
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
@@ -50,13 +51,15 @@ const MOUNT_NODE = document.getElementById('app');
 
 const render = messages => {
   ReactDOM.render(
-    <Provider store={store}>
-      <LanguageProvider messages={messages}>
-        <ConnectedRouter history={history}>
-          <App />
-        </ConnectedRouter>
-      </LanguageProvider>
-    </Provider>,
+    <ThemeProvider theme={theme}>
+      <Provider store={store}>
+        <LanguageProvider messages={messages}>
+          <ConnectedRouter history={history}>
+            <App />
+          </ConnectedRouter>
+        </LanguageProvider>
+      </Provider>
+    </ThemeProvider>,
     MOUNT_NODE,
   );
 };

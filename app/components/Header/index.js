@@ -53,7 +53,7 @@ function Header() {
 
   return (
     <div>
-      <AppBar position="static">
+      <AppBar>
         <Toolbar>
           <IconButton
             edge="start"

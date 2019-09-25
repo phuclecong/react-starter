@@ -1,5 +1,5 @@
 {
-  "app.components.Header.header": "This is the Header component!",
+  "app.components.Header.name": "Lorem Ipsum",
   "app.components.MenuLanguage.en": "English",
   "app.components.MenuLanguage.vi": "Vietnamese",
   "app.components.Navigation.aboutUs": "About Us",

@@ -17,6 +17,10 @@ import Navigation from 'components/Navigation';
 import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { FormattedMessage } from 'react-intl';
+import messages from './messages';
+
+console.log(messages);
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -60,7 +64,7 @@ function Header() {
             <MenuIcon />
           </IconButton>
           <Box flexGrow={1} component="h4">
-            Hello World!
+            <FormattedMessage {...messages.name} />
           </Box>
           <LocaleToggle />
         </Toolbar>

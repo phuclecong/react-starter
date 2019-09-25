@@ -18,7 +18,7 @@ export default function HomePage() {
         <title>Home Page</title>
         <meta name="description" content="Homepage" />
       </Helmet>
-      <Box py={2}>
+      <Box py={2} mt={6}>
         <Box component="h2" color="primary.main">
           <FormattedMessage {...messages.header} />
         </Box>

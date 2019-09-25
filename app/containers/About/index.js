@@ -30,7 +30,7 @@ export function About() {
         <title>About</title>
         <meta name="description" content="Description of About" />
       </Helmet>
-      <Box py={2}>
+      <Box py={2} mt={6}>
         <Box component="h2" color="primary.main">
           <FormattedMessage {...messages.header} />
         </Box>

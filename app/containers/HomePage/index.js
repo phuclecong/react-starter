@@ -24,6 +24,14 @@ export default function HomePage() {
         </Box>
         <Box component="p">
           <FormattedMessage {...messages.content} />
+          <FormattedMessage {...messages.content} />
+          <FormattedMessage {...messages.content} />
+          <FormattedMessage {...messages.content} />
+          <FormattedMessage {...messages.content} />
+          <FormattedMessage {...messages.content} />
+          <FormattedMessage {...messages.content} />
+          <FormattedMessage {...messages.content} />
+          <FormattedMessage {...messages.content} />
         </Box>
       </Box>
     </div>

@@ -60,7 +60,7 @@ function Header() {
             <MenuIcon />
           </IconButton>
           <Box flexGrow={1} component="h4">
-            Loremp
+            Hello World!
           </Box>
           <LocaleToggle />
         </Toolbar>

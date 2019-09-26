@@ -64,7 +64,7 @@ function Header() {
             <MenuIcon />
           </IconButton>
           <Box flexGrow={1} component="h4">
-            <FormattedMessage {...messages.name} />
+            Loremp Ip Sum
           </Box>
           <LocaleToggle />
         </Toolbar>
